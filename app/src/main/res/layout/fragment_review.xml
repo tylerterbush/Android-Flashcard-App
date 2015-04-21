@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tylerterbush.flashboard.ReviewFragment"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_subject"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"/>
+
+        <Spinner
+            android:id="@+id/spinner_review"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/randomize"
+                android:gravity="center"
+                android:layout_marginTop="80dp"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="@string/start"
+            android:layout_gravity="center"
+            android:onClick="startStudying"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</FrameLayout>

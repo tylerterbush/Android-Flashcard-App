@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tylerterbush.flashboard.InsertCardsFragment"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_insert_card"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/add_deck_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:layout_marginTop="20dp"
+                android:onClick="createNewDeck"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:hint="@string/question"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:gravity="top|start"
+            android:id="@+id/question" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:hint="@string/answer"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="false"
+            android:gravity="top|start"
+            android:layout_marginTop="10dp"
+            android:id="@+id/answer" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:text="@string/insert"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/insert_card"
+            android:onClick="insertCard"/>
+    </LinearLayout>
+
+
+</FrameLayout>
